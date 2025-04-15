@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2024.3.5\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release -G "MinGW Makefiles" -S C:\Users\flaim\Desktop\Launcher_Client -B C:\Users\flaim\Desktop\Launcher_Client\cmake-build-run
+-- Configuring done (0.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/flaim/Desktop/Launcher_Client/cmake-build-run
