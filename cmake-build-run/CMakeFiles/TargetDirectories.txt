@@ -1,3 +1,0 @@
-C:/Users/flaim/Desktop/Launcher_Client/cmake-build-run/CMakeFiles/LauncherClient.dir
-C:/Users/flaim/Desktop/Launcher_Client/cmake-build-run/CMakeFiles/edit_cache.dir
-C:/Users/flaim/Desktop/Launcher_Client/cmake-build-run/CMakeFiles/rebuild_cache.dir

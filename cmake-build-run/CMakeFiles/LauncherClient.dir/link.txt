@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2024.3.5\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\LauncherClient.dir/objects.a
-C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\ar.exe qc CMakeFiles\LauncherClient.dir/objects.a @CMakeFiles\LauncherClient.dir\objects1.rsp
-C:\PROGRA~1\JETBRA~1\CLION2~1.5\bin\mingw\bin\G__~1.EXE -O3 -DNDEBUG -static -static-libgcc -static-libstdc++ -Wl,--whole-archive CMakeFiles\LauncherClient.dir/objects.a -Wl,--no-whole-archive -o LauncherClient.exe -Wl,--out-implib,libLauncherClient.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\LauncherClient.dir\linkLibs.rsp
