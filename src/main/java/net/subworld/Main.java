@@ -1,4 +1,4 @@
-package org.example;
+package net.subworld;
 
 import javax.swing.*;
 import javax.swing.event.*;
