@@ -50,6 +50,15 @@
 
 Если у вас есть вопросы, предложения или возникли проблемы с лаунчером — мы всегда на связи:
 
+
+<a href="https://discord.gg/hqsHD6Eddm">
+   <img alt="WhoMine Discord" src="https://img.shields.io/discord/1201504312841478175?style=for-the-badge&label=SubWorld&logo=discord&color=332b71&logoColor=ffffff&labelColor=6d6e9b">
+</a>
+
+<a href="https://t.me/shelter_flaim">
+   <img alt="Telegram Channel" src="https://img.shields.io/badge/telegram-black?logo=Telegram&style=for-the-badge&color=332b71&logoColor=d9e0ee&labelColor=6d6e9b">
+</a>
+
 - 💬 [Discord-сервер](https://discord.gg/hqsHD6Eddm) — обсуждения, помощь, новости и живое сообщество игроков.
 - 📢 [Telegram-канал](https://t.me/shelter_flaim) — оперативные анонсы от разработчиков и возможность обсудить каждый пост в комментариях.
 
