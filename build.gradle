@@ -12,13 +12,25 @@ repositories {
 
 dependencies {
     implementation("com.google.code.gson:gson:2.13.0")
+
+    // apache libs
     implementation group: 'org.apache.httpcomponents.client5', name: 'httpclient5', version: '5.4.3'
+    implementation group: 'org.apache.commons', name: 'commons-compress', version: '1.27.1'
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.17.0'
+    implementation group: 'org.apache.commons', name: 'commons-text', version: '1.13.1'
 
     implementation 'com.google.guava:guava:31.1-jre'
 
     implementation 'com.google.inject:guice:5.0.1'
     implementation 'javax.inject:javax.inject:1'
 
+    // annotation
     compileOnly("org.projectlombok:lombok:1.18.38")
     annotationProcessor("org.projectlombok:lombok:1.18.38")
+
+    //awt libs
+    implementation group: 'com.miglayout', name: 'miglayout-swing', version: '11.4.2'
+    implementation group: 'com.fifesoft', name: 'rsyntaxtextarea', version: '3.6.0'
+    implementation group: 'com.github.lgooddatepicker', name: 'LGoodDatePicker', version: '11.2.1'
+    implementation group: 'com.kitfox.svg', name: 'svg-salamander', version: '1.0'
 }
