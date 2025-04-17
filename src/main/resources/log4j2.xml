@@ -18,11 +18,6 @@
         </File>
     </Appenders>
     <Loggers>
-        <Root level="info">
-            <AppenderRef ref="Console"/>
-            <AppenderRef ref="FileLogger"/>
-        </Root>
-
         <Logger name="System.out" level="info" additivity="false">
             <AppenderRef ref="StdOut" />
             <AppenderRef ref="FileLogger"/>
@@ -33,5 +28,9 @@
             <AppenderRef ref="FileLogger"/>
         </Logger>
 
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+        </Root>
     </Loggers>
 </Configuration>

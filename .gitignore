@@ -3,6 +3,7 @@ build/
 !../LauncherClient2/gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+logs
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
