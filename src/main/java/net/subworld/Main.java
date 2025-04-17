@@ -1,10 +1,14 @@
 package net.subworld;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import javax.swing.*;
 import javax.swing.event.*;
 
 
 public class Main {
+    private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
         JFrame frame = new JFrame("HTML Viewer with Click Handling");
 

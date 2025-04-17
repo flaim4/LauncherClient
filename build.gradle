@@ -11,8 +11,6 @@ repositories {
 }
 
 dependencies {
-    implementation("com.google.code.gson:gson:2.13.0")
-
     // apache libs
     implementation group: 'org.apache.httpcomponents.client5', name: 'httpclient5', version: '5.4.3'
     implementation group: 'org.apache.commons', name: 'commons-compress', version: '1.27.1'
@@ -24,6 +22,7 @@ dependencies {
     implementation 'com.google.guava:guava:31.1-jre'
     implementation 'com.google.inject:guice:5.0.1'
     implementation 'javax.inject:javax.inject:1'
+    implementation("com.google.code.gson:gson:2.13.0")
 
     // annotation
     compileOnly("org.projectlombok:lombok:1.18.38")
@@ -34,4 +33,16 @@ dependencies {
     implementation group: 'com.fifesoft', name: 'rsyntaxtextarea', version: '3.6.0'
     implementation group: 'com.github.lgooddatepicker', name: 'LGoodDatePicker', version: '11.2.1'
     implementation group: 'com.kitfox.svg', name: 'svg-salamander', version: '1.0'
+
+    //Eclipse aether
+    implementation 'org.eclipse.aether:aether-api:1.1.0'
+    implementation 'org.eclipse.aether:aether-connector-basic:1.1.0'
+    implementation 'org.eclipse.aether:aether-transport-http:1.1.0'
+    implementation 'org.eclipse.aether:aether-impl:1.1.0'
+
+    //implementation 'org.luaj:luaj-jse:3.0.1'
+
+    //log
+    implementation("org.apache.logging.log4j:log4j-core:2.22.1")
+    implementation("org.apache.logging.log4j:log4j-api:2.22.1")
 }
