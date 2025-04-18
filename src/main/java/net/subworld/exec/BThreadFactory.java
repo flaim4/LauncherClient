@@ -11,7 +11,7 @@ public class BThreadFactory implements ThreadFactory {
     @Override
     public Thread newThread(Runnable r) {
         Thread t = new Thread(r, "Worker-threard-" + count.getAndIncrement());
-        t.setDaemon(true);
+        t.setDaemon(false);
         t.setPriority(Thread.NORM_PRIORITY);
         return t;
     }
