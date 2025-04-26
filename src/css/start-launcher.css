@@ -7,12 +7,14 @@ body {
     -webkit-app-region: no-drag;
 }
 
-
 .start-launcher {
     margin-top: 157px;
 }
 
 .title-bar {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
     height: 30px;
     background-color: #2d2d2d;
     display: flex;
@@ -57,7 +59,7 @@ body {
     border: none;
 }
 
-#hideBtn img{
+#hideBtn img {
     left: 18.5px;
     top: 17.32px;
 }
@@ -66,7 +68,6 @@ body {
     left: 20.5px;
     top: 11.5px;
 }
-
 
 #closeBtn {
     position: relative;
@@ -88,4 +89,10 @@ body {
 
 #hideBtn:hover {
     background-color: #303030;
+}
+
+.auth-header {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
 }

@@ -113,3 +113,19 @@ input {
     line-height: 24px;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    color: #19875B;
+    border-color: #19875B;
+    box-shadow: 0 0 0 2px rgba(25, 135, 91, 0.2);
+}
+
+input:focus::placeholder {
+    color: #19875B;
+  }
+
+input {
+    color: rgba(255, 255, 255, 0.3);
+}
