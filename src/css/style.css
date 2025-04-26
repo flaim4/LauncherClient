@@ -1,0 +1,115 @@
+input {
+    box-sizing: border-box;
+    min-height: 52px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    font-family: "Montserrat";
+    background-color: rgba(96, 129, 175, 0.02);
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    background-color: rgba(96, 129, 175, 0.08);
+    transition: all 0.2s ease;
+}
+
+.checkmark svg {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.custom-checkbox input:checked~.checkmark {
+    background-color: #19875B;
+    border-color: #19875B;
+}
+
+.custom-checkbox input:checked~.checkmark svg {
+    opacity: 1;
+}
+
+.checkbox-label {
+    color: #6F6F6F;
+    font-family: "Montserrat";
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+.custom-checkbox:hover .checkmark {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.custom-checkbox:hover .checkbox-label {
+    color: #AAAAAA;
+}
+
+.custom-checkbox input:checked~.checkbox-label {
+    color: white;
+}
+
+.submit-btn {
+    box-sizing: border-box;
+    min-height: 48px;
+    width: 360px;
+    background-color: #19875B;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.submit-btn:hover {
+    background-color: #157347;
+}
+
+.auth-title {
+    color: #FFFFFF;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.line {
+    border-left: 1px solid rgba(111, 111, 111, 1);
+    height: 100%;
+    padding: 0 0 0 10.5px;
+    color: #6F6F6F;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+

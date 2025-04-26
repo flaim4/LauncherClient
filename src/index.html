@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="./css/start-launcher.css">
+</head>
+
+<body>
+  <div class="title-bar">
+    <div class="window-controls">
+      <div class="tools-btn">
+        <div id="min-btn"><img src="./svg/back.svg" alt=""></div>
+        <div id="closeBtn"><img src="./svg/exit.svg" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <div class="start-launcher">
+    <div class="auth-header">
+      <h1 style="margin-bottom: 16px;" class="auth-title">Войти</h1>
+      <div class="line">
+        <p style="margin-bottom: 24px;" class="auth-subtitle">Введите ваши данные для входа в<br>систему</p>
+      </div>
+    </div>
+    <form action="">
+      <input style="width: 360px; margin-bottom: 16px;" type="text" placeholder="Имя пользователя">
+      <input style="width: 360px; margin-bottom: 24px;" type="password" placeholder="Пароль">
+      <label style="margin-bottom: 32px;" class="custom-checkbox">
+        <input type="checkbox">
+        <span class="checkmark">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M11.6666 3.5L5.24992 9.91667L2.33325 7" stroke="white" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span class="checkbox-label">Запомнить меня</span>
+      </label>
+      <input type="submit" class="submit-btn" style="background-color: #19875B; width: 360px;" value="Войти">
+    </form>
+  </div>
+  <script src="./renderer.js"></script>
+</body>
+
 </html>

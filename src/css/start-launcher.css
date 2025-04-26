@@ -1,0 +1,92 @@
+body {
+    background-color: #141414;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    -webkit-app-region: no-drag;
+}
+
+
+.start-launcher {
+    margin-top: 157px;
+}
+
+.title-bar {
+    -webkit-app-region: drag;
+    height: 30px;
+    background-color: #2d2d2d;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.window-controls {
+    -webkit-app-region: drag;
+    display: flex;
+}
+
+.window-controls button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#close-btn:hover {
+    background: #e81123 !important;
+}
+
+.window-controls {
+    width: 100%;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.02);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tools-btn {
+    -webkit-app-region: no-drag;
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+#min-btn {
+    position: relative;
+    width: 52px;
+    height: 35px;
+    background-color: #191919;
+    border: none;
+}
+
+#min-btn img{
+    left: 18.5px;
+    top: 17.32px;
+}
+
+#closeBtn img {
+    left: 20.5px;
+    top: 11.5px;
+}
+
+
+#closeBtn {
+    position: relative;
+    width: 52px;
+    height: 35px;
+    background-color: #191919;
+    border: none;
+}
+
+#min-btn img,
+#closeBtn img {
+    position: absolute;
+    transition: top 0.2s ease;
+}
+
+#closeBtn:hover {
+    background-color: #303030;
+}
+
+#min-btn:hover {
+    background-color: #303030;
+}
