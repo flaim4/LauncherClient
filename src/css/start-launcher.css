@@ -13,7 +13,6 @@ body {
 }
 
 .title-bar {
-    -webkit-app-region: drag;
     height: 30px;
     background-color: #2d2d2d;
     display: flex;
@@ -50,7 +49,7 @@ body {
     display: flex;
 }
 
-#min-btn {
+#hideBtn {
     position: relative;
     width: 52px;
     height: 35px;
@@ -58,7 +57,7 @@ body {
     border: none;
 }
 
-#min-btn img{
+#hideBtn img{
     left: 18.5px;
     top: 17.32px;
 }
@@ -77,7 +76,7 @@ body {
     border: none;
 }
 
-#min-btn img,
+#hideBtn img,
 #closeBtn img {
     position: absolute;
     transition: top 0.2s ease;
@@ -87,6 +86,6 @@ body {
     background-color: #303030;
 }
 
-#min-btn:hover {
+#hideBtn:hover {
     background-color: #303030;
 }

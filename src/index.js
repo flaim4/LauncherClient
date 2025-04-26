@@ -45,3 +45,8 @@ ipcMain.on('close-window', () => {
   const win = BrowserWindow.getFocusedWindow();
   if (win) win.close();
 });
+
+ipcMain.on('hide-window', () => {
+  const win = BrowserWindow.getFocusedWindow();
+  if (win) win.minimize();
+});
