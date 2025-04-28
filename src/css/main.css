@@ -1,24 +1,45 @@
 @font-face {
     font-family: "Montserrat";
     src: url("../fonts/Montserrat-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
 }
 
 .panel {
     height: 100vh;
     width: 80px;
     background-color: #161616;
-    position: absolute;
+    position: fixed;
     left: 0;
+    top: 0;
 }
 
 .button {
-    margin-top: 35px;
-    background-color: #161C19;
-    border-right: 1px #19875B solid;
     padding: 16px 27px 16px 28px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.button.active {
+    background-color: #161C19 !important;;
+    border-right: 2px solid #19875B;
+    padding: 16px 25px 16px 28px;
+}
 
+.button svg path,
+.button svg circle,
+.button svg line {
+    color: #737373;
+}
+
+.button.active svg path,
+.button.active svg circle,
+.button.active svg line {
+    color: #19875B;
+}
 
 .cards {
     top: 68px;
@@ -26,35 +47,55 @@
     position: absolute;
 }
 
-.card:hover {
-    
-}
-
 .sborkaimg {
     width: 205px;
     height: 205px;
     border-radius: 12px;
-    border: 0.5px solid #ffffff30;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    transition: border-color 0.3s ease;
 }
 
 .sborkaname {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     margin: 8px 0 2px 0;
     color: #fff;
+    font-weight: 600;
 }
 
 .sborkavers {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     color: #A1A1A1;
+    font-weight: 400;
 }
 
 .playbut {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 42px;
     width: 205px;
     height: 42px;
+    background-color: #19875B;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.playbut:hover {
+    background-color: #1a9e68;
 }
 
 .button img {
     width: 24px;
     height: 24px;
+}
+
+.button:hover {
+    background-color: #181818;
+}
+.button:not(.active):hover svg path,
+.button:not(.active):hover svg circle,
+.button:not(.active):hover svg path {
+    color: #A3A3A3;
 }

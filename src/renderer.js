@@ -44,3 +44,26 @@ function openPage(name) {
     main.style.display = 'none';
   }
 } 
+
+const panel = document.querySelector(".panel");
+
+panel.addEventListener("click", (event) => {
+  const button = event.target.closest(".button");
+  if (!button) return;
+
+  document.querySelectorAll(".button").forEach(btn => {
+    btn.classList.remove("active");
+    btn.classList.add("no-active");
+  });
+
+  button.classList.remove("no-active");
+  button.classList.add("active");
+
+  if (button.id === "home") {
+    openHome();
+  }
+});
+
+function openHome() {
+  console.log("Home opened!");
+}
