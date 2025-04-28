@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
+.panel {
+    height: 100vh;
+    width: 80px;
+    background-color: #161616;
+    position: absolute;
+    left: 0;
+}
+
+.button {
+    margin-top: 35px;
+    background-color: #161C19;
+    border-right: 1px #19875B solid;
+    padding: 16px 27px 16px 28px;
+}
+
+
+
+.cards {
+    top: 68px;
+    left: 110px;
+    position: absolute;
+}
+
+.card:hover {
+    
+}
+
+.sborkaimg {
+    width: 205px;
+    height: 205px;
+    border-radius: 12px;
+    border: 0.5px solid #ffffff30;
+}
+
+.sborkaname {
+    font-family: "Montserrat";
+    margin: 8px 0 2px 0;
+    color: #fff;
+}
+
+.sborkavers {
+    font-family: "Montserrat";
+    margin: 0;
+    color: #A1A1A1;
+}
+
+.playbut {
+    width: 205px;
+    height: 42px;
+}
+
+.button img {
+    width: 24px;
+    height: 24px;
+}

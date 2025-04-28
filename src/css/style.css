@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-SemiBold.ttf");
+}
+
 input {
     box-sizing: border-box;
     min-height: 52px;
@@ -124,8 +129,14 @@ select:focus {
 
 input:focus::placeholder {
     color: #19875B;
-  }
+}
 
 input {
     color: rgba(255, 255, 255, 0.3);
+}
+
+.start-launcher {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
 }

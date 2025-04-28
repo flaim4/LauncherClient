@@ -1,12 +1,6 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('node:path');
 
-let mainWindow;
-
-if (require('electron-squirrel-startup')) {
-  app.quit();
-}
-
 const createWindow = () => {
   mainWindow = new BrowserWindow({
     width: 1100,
@@ -27,13 +21,18 @@ const createWindow = () => {
 
 app.whenReady().then(() => {
   createWindow();
-  
+
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {
       createWindow();
     }
   });
 });
+
+
+if (require('electron-squirrel-startup')) {
+  app.quit();
+}
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
