@@ -50,6 +50,8 @@
 }
 
 .playbut {
+    font-family: "Montserrat";
+    top: 42px;
     width: 205px;
     height: 42px;
 }
