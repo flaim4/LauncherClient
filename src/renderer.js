@@ -34,11 +34,11 @@ function openPage(name) {
   if (page == "main") {
     let main = document.querySelector(".main");
     main.style.display = 'block';
-    let login = document.querySelector(".start-launcher");
+    let login = document.querySelector(".login");
     login.style.display = 'none';
   }
   if (page == "login") {
-    let login = document.querySelector(".start-launcher");
+    let login = document.querySelector(".login");
     login.style.display = 'block';
     let main = document.querySelector(".main");
     main.style.display = 'none';
@@ -60,10 +60,6 @@ panel.addEventListener("click", (event) => {
   button.classList.add("active");
 
   if (button.id === "home") {
-    openHome();
+    
   }
 });
-
-function openHome() {
-  console.log("Home opened!");
-}

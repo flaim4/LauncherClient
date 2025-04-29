@@ -1,8 +1,3 @@
-@font-face {
-    font-family: "Montserrat";
-    src: url("../fonts/Montserrat-SemiBold.ttf");
-}
-
 input {
     box-sizing: border-box;
     min-height: 52px;
@@ -135,7 +130,94 @@ input {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.start-launcher {
+.login {
+    margin-top: 157px;
+}
+
+.title-bar {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    height: 30px;
+    background-color: #2d2d2d;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.window-controls {
+    -webkit-app-region: drag;
+    display: flex;
+}
+
+.window-controls button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.window-controls {
+    width: 100%;
+    height: 35px;
+    background-color: #191919;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.tools-btn {
+    -webkit-app-region: no-drag;
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+#hideBtn {
+    position: relative;
+    width: 52px;
+    height: 35px;
+    background-color: #191919;
+    border: none;
+}
+
+#hideBtn svg {
+    left: 18.5px;
+    top: 17.32px;
+}
+
+#closeBtn svg {
+    left: 20.5px;
+    top: 11.5px;
+}
+
+#closeBtn {
+    position: relative;
+    width: 52px;
+    height: 35px;
+    background-color: #191919;
+    border: none;
+}
+
+#hideBtn svg,
+#closeBtn svg {
+    position: absolute;
+    transition: top 0.2s ease;
+}
+
+#closeBtn:hover {
+    background-color: #303030;
+}
+
+#hideBtn:hover {
+    background-color: #303030;
+}
+
+.auth-header {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+
+.login {
     user-select: none;
     -webkit-user-select: none;
     -webkit-user-drag: none;

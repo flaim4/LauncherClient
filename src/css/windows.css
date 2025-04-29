@@ -1,16 +1,3 @@
-body {
-    background-color: #141414;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    -webkit-app-region: no-drag;
-}
-
-.start-launcher {
-    margin-top: 157px;
-}
-
 .title-bar {
     user-select: none;
     -webkit-user-select: none;
@@ -29,10 +16,6 @@ body {
 
 .window-controls button:hover {
     background: rgba(255, 255, 255, 0.1);
-}
-
-#close-btn:hover {
-    background: #e81123 !important;
 }
 
 .window-controls {
@@ -60,12 +43,22 @@ body {
     border: none;
 }
 
-#hideBtn img {
+#hideBtn svg {
     left: 18.5px;
     top: 17.32px;
 }
 
-#closeBtn img {
+#hideBtn svg,
+#closeBtn svg {
+    position: absolute;
+    transition: top 0.2s ease;
+}
+
+#hideBtn:hover {
+    background-color: #303030;
+}
+
+#closeBtn svg {
     left: 20.5px;
     top: 11.5px;
 }
@@ -78,22 +71,6 @@ body {
     border: none;
 }
 
-#hideBtn img,
-#closeBtn img {
-    position: absolute;
-    transition: top 0.2s ease;
-}
-
 #closeBtn:hover {
     background-color: #303030;
-}
-
-#hideBtn:hover {
-    background-color: #303030;
-}
-
-.auth-header {
-    user-select: none;
-    -webkit-user-select: none;
-    -webkit-user-drag: none;
 }
