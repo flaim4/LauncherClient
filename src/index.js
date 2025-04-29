@@ -29,7 +29,6 @@ app.whenReady().then(() => {
   });
 });
 
-
 if (require('electron-squirrel-startup')) {
   app.quit();
 }

@@ -25,7 +25,7 @@ if (hideBtn) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   openPage("main")
 });
 
@@ -43,11 +43,9 @@ function openPage(name) {
     let main = document.querySelector(".main");
     main.style.display = 'none';
   }
-} 
+}
 
-const panel = document.querySelector(".panel");
-
-panel.addEventListener("click", (event) => {
+document.querySelector(".panel").addEventListener("click", (event) => {
   const button = event.target.closest(".button");
   if (!button) return;
 
@@ -58,8 +56,19 @@ panel.addEventListener("click", (event) => {
 
   button.classList.remove("no-active");
   button.classList.add("active");
+});
 
-  if (button.id === "home") {
-    
-  }
+document.querySelectorAll('.card').forEach(card => {
+  const info = card.querySelector('.info');
+  const btn = card.querySelector('.playbut');
+  
+  card.addEventListener('mouseenter', () => {
+    info.style.display = 'none';
+    btn.style.display = 'block';
+  });
+  
+  card.addEventListener('mouseleave', () => {
+    info.style.display = 'block';
+    btn.style.display = 'none';
+  });
 });
