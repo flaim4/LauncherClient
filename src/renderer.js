@@ -1,7 +1,8 @@
 const closeBtn = document.getElementById('closeBtn');
 const hideBtn = document.getElementById('hideBtn');
 
-let page = "main"
+let page = "login"
+let panel = "home"
 
 if (closeBtn) {
   closeBtn.addEventListener('click', (e) => {
@@ -27,6 +28,11 @@ if (hideBtn) {
 
 document.addEventListener('DOMContentLoaded', function () {
   openPage("main")
+  const homeBtn = document.getElementById('home');
+  if (homeBtn) {
+    homeBtn.classList.remove("no-active");
+    homeBtn.classList.add("active");
+  }
 });
 
 function openPage(name) {
@@ -48,7 +54,7 @@ function openPage(name) {
 document.querySelector(".panel").addEventListener("click", (event) => {
   const button = event.target.closest(".button");
   if (!button) return;
-
+  
   document.querySelectorAll(".button").forEach(btn => {
     btn.classList.remove("active");
     btn.classList.add("no-active");

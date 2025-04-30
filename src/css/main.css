@@ -66,6 +66,7 @@
 }
 
 .playbut {
+    display: none;
     font-family: "Montserrat", sans-serif;
     margin-top: 7.8px;
     width: 205px;
@@ -99,5 +100,8 @@
 .cards {
     display: flex;
     gap: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
 }
 
