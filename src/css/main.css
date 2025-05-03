@@ -17,19 +17,22 @@
 }
 
 .button.active {
-    background-color: #161C19 !important;;
+    background-color: #161C19 !important;
+    ;
     border-right: 2px solid #19875B;
     padding: 16px 25px 16px 28px;
 }
 
 .button svg path,
 .button svg circle,
+.button svg ellipse,
 .button svg line {
     color: #737373;
 }
 
 .button.active svg path,
 .button.active svg circle,
+.button.active svg ellipse,
 .button.active svg line {
     color: #19875B;
 }
@@ -91,8 +94,10 @@
 .button:hover {
     background-color: #181818;
 }
+
 .button:not(.active):hover svg path,
 .button:not(.active):hover svg circle,
+.button:not(.active):hover svg ellipse,
 .button:not(.active):hover svg path {
     color: #A3A3A3;
 }
@@ -104,4 +109,3 @@
     -webkit-user-select: none;
     -webkit-user-drag: none;
 }
-

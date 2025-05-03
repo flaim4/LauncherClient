@@ -54,7 +54,7 @@ function openPage(name) {
 document.querySelector(".panel").addEventListener("click", (event) => {
   const button = event.target.closest(".button");
   if (!button) return;
-  
+
   document.querySelectorAll(".button").forEach(btn => {
     btn.classList.remove("active");
     btn.classList.add("no-active");
@@ -67,12 +67,12 @@ document.querySelector(".panel").addEventListener("click", (event) => {
 document.querySelectorAll('.card').forEach(card => {
   const info = card.querySelector('.info');
   const btn = card.querySelector('.playbut');
-  
+
   card.addEventListener('mouseenter', () => {
     info.style.display = 'none';
     btn.style.display = 'block';
   });
-  
+
   card.addEventListener('mouseleave', () => {
     info.style.display = 'block';
     btn.style.display = 'none';
